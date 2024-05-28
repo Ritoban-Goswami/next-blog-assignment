@@ -5,7 +5,7 @@
     "date": "2023-04-12",
     "author": "Jane Doe",
     "description": "A comprehensive guide to understanding and using React Hooks in your applications.",
-    "thumbnail": "https://via.placeholder.com/150"
+    "thumbnail": "https://picsum.photos/600/300"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "date": "2023-05-08",
     "author": "John Smith",
     "description": "An in-depth comparison between Next.js and Gatsby for building static and dynamic websites.",
-    "thumbnail": "https://via.placeholder.com/150"
+    "thumbnail": "https://picsum.photos/600/300"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "date": "2023-06-15",
     "author": "Alice Johnson",
     "description": "Tips and tricks for mastering CSS Grid layout in modern web design.",
-    "thumbnail": "https://via.placeholder.com/150"
+    "thumbnail": "https://picsum.photos/600/300"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "date": "2023-07-20",
     "author": "Bob Lee",
     "description": "Learn how to optimize JavaScript for better performance and faster load times.",
-    "thumbnail": "https://via.placeholder.com/150"
+    "thumbnail": "https://picsum.photos/600/300"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "date": "2023-08-05",
     "author": "Charlie Kim",
     "description": "An introductory guide to TypeScript and how it can improve your JavaScript code.",
-    "thumbnail": "https://via.placeholder.com/150"
+    "thumbnail": "https://picsum.photos/600/300"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "date": "2023-09-10",
     "author": "Dana White",
     "description": "Step-by-step instructions for building Progressive Web Apps (PWAs) using modern web technologies.",
-    "thumbnail": "https://via.placeholder.com/150"
+    "thumbnail": "https://picsum.photos/600/300"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "date": "2023-10-18",
     "author": "Evan Green",
     "description": "A beginner's guide to understanding and using GraphQL for API development.",
-    "thumbnail": "https://via.placeholder.com/150"
+    "thumbnail": "https://picsum.photos/600/300"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "date": "2023-11-22",
     "author": "Fiona Black",
     "description": "Explore advanced patterns and techniques for building complex React applications.",
-    "thumbnail": "https://via.placeholder.com/150"
+    "thumbnail": "https://picsum.photos/600/300"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "date": "2023-12-05",
     "author": "George Brown",
     "description": "Understanding serverless architecture and how to implement it in your projects.",
-    "thumbnail": "https://via.placeholder.com/150"
+    "thumbnail": "https://picsum.photos/600/300"
   },
   {
     "id": 10,
@@ -77,6 +77,6 @@
     "date": "2024-01-12",
     "author": "Hannah Davis",
     "description": "Learn about modern web security practices to protect your applications from common vulnerabilities.",
-    "thumbnail": "https://via.placeholder.com/150"
+    "thumbnail": "https://picsum.photos/600/300"
   }
 ]

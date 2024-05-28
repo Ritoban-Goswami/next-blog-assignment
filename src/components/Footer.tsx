@@ -3,23 +3,21 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="flex justify-center items-center space-y-4 flex-col py-8">
-      <div className="flex space-x-4">
+      <div className="flex space-x-11">
         <Link href="#">
-          <FacebookIcon className="h-5 w-5 text-gray-700" />
+          <FacebookIcon className="h-8 w-8 text-gray-700" />
         </Link>
         <Link href="#">
-          <InstagramIcon className="h-5 w-5 text-gray-700" />
+          <InstagramIcon className="h-8 w-8 text-gray-700" />
         </Link>
         <Link href="#">
-          <TwitterIcon className="h-5 w-5 text-gray-700" />
+          <TwitterIcon className="h-8 w-8 text-gray-700" />
         </Link>
         <Link href="#">
-          <LinkedinIcon className="h-5 w-5 text-gray-700" />
+          <LinkedinIcon className="h-8 w-8 text-gray-700" />
         </Link>
       </div>
-      <p className="text-sm text-gray-500">
-        Copyright ©2020 All rights reserved
-      </p>
+      <p className="text-gray-500">Copyright ©2020 All rights reserved</p>
     </footer>
   );
 };
