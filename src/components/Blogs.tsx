@@ -1,11 +1,19 @@
 import { promises as fs } from "fs";
 
+interface BlogPost {
+  id: string;
+  title: string;
+  date: string;
+  author: string;
+  description: string;
+}
+
 export default async function Blogs() {
   const file = await fs.readFile(
     process.cwd() + "/src/data/blogPosts.json",
     "utf8"
   );
-  const posts = JSON.parse(file);
+  const posts: BlogPost[] = JSON.parse(file);
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <section className="max-w-xl mx-auto">

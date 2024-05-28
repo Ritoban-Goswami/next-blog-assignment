@@ -26,7 +26,9 @@ const Footer = () => {
 
 export default Footer;
 
-function FacebookIcon(props) {
+interface SVGProps extends React.SVGProps<SVGSVGElement> {}
+
+function FacebookIcon(props: SVGProps) {
   return (
     <svg
       {...props}
@@ -44,7 +46,7 @@ function FacebookIcon(props) {
   );
 }
 
-function InstagramIcon(props) {
+function InstagramIcon(props: SVGProps) {
   return (
     <svg
       {...props}
@@ -70,7 +72,7 @@ function InstagramIcon(props) {
   );
 }
 
-function LinkedinIcon(props) {
+function LinkedinIcon(props: SVGProps) {
   return (
     <svg
       {...props}
@@ -88,7 +90,7 @@ function LinkedinIcon(props) {
   );
 }
 
-function TwitterIcon(props) {
+function TwitterIcon(props: SVGProps) {
   return (
     <svg
       {...props}
