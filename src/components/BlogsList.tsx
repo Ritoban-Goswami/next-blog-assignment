@@ -1,9 +1,9 @@
-import { promises as fs } from "fs";
 import Search from "./Search";
 import Blog from "./Blog";
+import blogPosts from "../data/blogPosts.json";
 
 export interface BlogPost {
-  id: string;
+  id: number;
   title: string;
   date: string;
   author: string;
@@ -12,14 +12,8 @@ export interface BlogPost {
 }
 
 export default async function Blogs({ query }: { query: string }) {
-  const file = await fs.readFile(
-    process.cwd() + "/src/data/blogPosts.json",
-    "utf8"
-  );
-  const posts: BlogPost[] = JSON.parse(file);
-
   // Filter posts based on the query
-  const filteredPosts = posts.filter(
+  const filteredPosts = blogPosts.filter(
     ({ title, description }) =>
       title.toLowerCase().includes(query.toLowerCase()) ||
       description.toLowerCase().includes(query.toLowerCase())
