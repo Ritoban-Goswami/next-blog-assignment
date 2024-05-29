@@ -46,8 +46,12 @@ const NavBar = () => {
         <Link href="/" className="text-active">
           Blog
         </Link>
-        <Link href="#">Works</Link>
-        <Link href="#">Contact</Link>
+        <Link className="transition-all hover:text-active" href="#">
+          Works
+        </Link>
+        <Link className="transition-all hover:text-active" href="#">
+          Contact
+        </Link>
       </div>
       <ThemeSwitch />
     </nav>

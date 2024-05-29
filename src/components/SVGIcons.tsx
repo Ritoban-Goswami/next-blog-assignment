@@ -82,7 +82,6 @@ export function SunIcon(props: SVGProps) {
   return (
     <svg
       {...props}
-      className="stroke-current cursor-pointer w-6 h-6"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +108,6 @@ export function MoonIcon(props: SVGProps) {
   return (
     <svg
       {...props}
-      className="stroke-current cursor-pointer w-6 h-6"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

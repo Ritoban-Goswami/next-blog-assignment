@@ -13,10 +13,20 @@ export default function ThemeSwitch() {
   if (!mounted) return null;
 
   if (resolvedTheme === "dark") {
-    return <SunIcon onClick={() => setTheme("light")} />;
+    return (
+      <SunIcon
+        className="stroke-current cursor-pointer w-6 h-6 hover:text-active"
+        onClick={() => setTheme("light")}
+      />
+    );
   }
 
   if (resolvedTheme === "light") {
-    return <MoonIcon onClick={() => setTheme("dark")} />;
+    return (
+      <MoonIcon
+        className="stroke-current cursor-pointer w-6 h-6 transition-all hover:text-active"
+        onClick={() => setTheme("dark")}
+      />
+    );
   }
 }
