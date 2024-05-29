@@ -1,7 +1,7 @@
 import { promises as fs } from "fs";
-import Image from "next/image";
 import Link from "next/link";
 import Search from "./Search";
+import BlogThumbnail from "./BlogThumbnail";
 
 interface BlogPost {
   id: string;
@@ -35,13 +35,7 @@ export default async function Blogs({ query }: { query: string }) {
           ({ id, title, date, author, description, thumbnail }) => (
             <Link key={id} href="#">
               <article className="group rounded mb-8 border-b border-[#E0E0E0] duration-150">
-                <Image
-                  src={thumbnail}
-                  className="rounded-t mb-5 transition-all group-hover:opacity-90"
-                  width={600}
-                  height={300}
-                  alt="blog image"
-                />
+                <BlogThumbnail thumbnail={thumbnail} />
                 <div className="p-3">
                   <div className="relative w-max mb-2">
                     <h2 className="text-2xl font-medium">{title}</h2>
