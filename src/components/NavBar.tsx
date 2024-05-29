@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import ThemeSwitch from "./ThemeSwitch";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +13,7 @@ const NavBar = () => {
 
   return (
     <nav className="flex justify-end items-center font-medium py-7 px-6 sm:px-12">
+      <ThemeSwitch />
       <div className="flex items-center sm:hidden">
         <button onClick={toggleMenu}>
           <svg

@@ -16,9 +16,14 @@ const config: Config = {
       colors: {
         active: "#FF6464",
         light: "#8695A4",
+        lightforeground: "#21243d",
+        lightbackground: "#ffffff",
+        darkforeground: "#f4f4f4",
+        darkbackground: "#0f0f0f",
       },
     },
   },
   plugins: [],
+  darkMode: "class",
 };
 export default config;

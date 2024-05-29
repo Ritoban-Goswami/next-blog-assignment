@@ -34,18 +34,18 @@ export default async function Blogs({ query }: { query: string }) {
         {filteredPosts.map(
           ({ id, title, date, author, description, thumbnail }) => (
             <Link key={id} href="#">
-              <article className="group rounded mb-8 border-b border-[#E0E0E0] duration-150">
+              <article className="group mb-8 border-b border-[#E0E0E0] dark:border-[#484848] duration-150">
                 <BlogThumbnail thumbnail={thumbnail} />
-                <div className="p-3">
-                  <div className="relative w-max mb-2">
-                    <h2 className="text-2xl font-medium">{title}</h2>
-                    <span className="absolute -bottom-0 left-0 w-0 transition-all h-0.5 bg-active group-hover:w-full"></span>
-                  </div>
-                  <p className="mb-4">
-                    {date} | <span className="text-light">{author}</span>
-                  </p>
-                  <p className="text-sm text-gray-700 mb-4">{description}</p>
+                <div className="relative w-max mb-2">
+                  <h2 className="text-2xl font-medium">{title}</h2>
+                  <span className="absolute -bottom-0 left-0 w-0 transition-all h-0.5 bg-active group-hover:w-full"></span>
                 </div>
+                <p className="mb-4">
+                  {date} | <span className="text-light">{author}</span>
+                </p>
+                <p className="text-sm text-gray-700 dark:text-gray-400 mb-4">
+                  {description}
+                </p>
               </article>
             </Link>
           )

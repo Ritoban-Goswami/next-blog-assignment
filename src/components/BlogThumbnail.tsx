@@ -17,7 +17,7 @@ const BlogThumbnail = ({ thumbnail }: { thumbnail: string }) => {
       />
       <Image
         src={thumbnail}
-        className="rounded-t mb-5 transition-all group-hover:opacity-90"
+        className="rounded mb-5 transition-all group-hover:opacity-90"
         width={600}
         height={300}
         priority={true}

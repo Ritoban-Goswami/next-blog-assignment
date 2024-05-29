@@ -3,6 +3,7 @@ import { Heebo } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import { Providers } from "./providers";
 
 const heebo = Heebo({ subsets: ["latin"] });
 
@@ -17,11 +18,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={heebo.className}>
-        <NavBar />
-        {children}
-        <Footer />
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${heebo.className} bg-lightbackground text-lightforeground dark:bg-darkbackground dark:text-darkforeground`}
+      >
+        <Providers>
+          <NavBar />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
