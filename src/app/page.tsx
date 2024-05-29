@@ -1,5 +1,14 @@
 import Blogs from "@/components/Blogs";
 
-export default async function Home() {
-  return <Blogs />;
+interface SearchParams {
+  query?: string;
+}
+
+interface HomeProps {
+  searchParams?: SearchParams;
+}
+
+export default async function Home({ searchParams }: HomeProps) {
+  const query = searchParams?.query || "";
+  return <Blogs query={query} />;
 }
