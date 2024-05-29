@@ -1,4 +1,4 @@
-import Blogs from "@/components/Blogs";
+import Blogs from "@/components/BlogsList";
 
 interface SearchParams {
   query?: string;

@@ -19,7 +19,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
   return (
     <div className="relative my-14">
       <input
-        className="block w-full rounded-md border border-gray-200 py-[9px] pl-10 text-sm placeholder:text-gray-500 focus:outline-none"
+        className="w-full rounded-md border border-gray-200 dark:border-gray-600 py-[9px] pl-10 text-sm placeholder:text-gray-500 focus:outline-none"
         placeholder={placeholder}
         onChange={(e) => {
           handleSearch(e.target.value);
