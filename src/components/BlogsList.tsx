@@ -30,8 +30,8 @@ export default async function Blogs({ query }: { query: string }) {
           <div className="text-center">
             <h2 className="text-2xl font-semibold mb-4">No Results Found</h2>
             <p className="mb-2 text-light text-sm">
-              We couldn't find any blogs matching your search term{" "}
-              <strong>"{query}"</strong>.
+              We could not find any blogs matching your search term
+              <strong>&quot;{query}&quot;</strong>.
               <br />
               Try searching with different keywords.
             </p>
