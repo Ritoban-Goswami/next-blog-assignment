@@ -21,12 +21,22 @@ export default async function Blogs({ query }: { query: string }) {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-4 sm:p-24">
-      <section className="sm:max-w-xl sm:mx-auto">
+      <section className="sm:max-w-xl sm:min-w-[36rem] sm:mx-auto">
         <h1 className="text-4xl font-bold mb-12">Blog</h1>
-        <Search placeholder="Search blogs..." />
-        {filteredPosts.map((blog) => (
-          <Blog key={blog.id} blog={blog} />
-        ))}
+        <Search placeholder="&#128269;&nbsp;&nbsp;&nbsp;&nbsp;Search blogs..." />
+        {filteredPosts.length > 0 ? (
+          filteredPosts.map((blog) => <Blog key={blog.id} blog={blog} />)
+        ) : (
+          <div className="text-center">
+            <h2 className="text-2xl font-semibold mb-4">No Results Found</h2>
+            <p className="mb-2 text-light text-sm">
+              We couldn't find any blogs matching your search term{" "}
+              <strong>"{query}"</strong>.
+              <br />
+              Try searching with different keywords.
+            </p>
+          </div>
+        )}
       </section>
     </main>
   );
