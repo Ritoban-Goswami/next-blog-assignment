@@ -13,7 +13,7 @@ const Blog = ({ blog }: Blog) => {
       <div className="flex justify-between items-center">
         <div className="relative w-max mb-4">
           <h2 className="text-xl sm:text-2xl font-medium">{blog.title}</h2>
-          <span className="absolute -bottom-1 left-0 w-0 transition-all h-1 rounded bg-active group-hover:w-full"></span>
+          <span className="absolute -bottom-1 left-0 w-0 transition-all h-1 rounded bg-active sm:group-hover:w-full"></span>
         </div>
         <Bookmark blogID={blog.id} />
       </div>

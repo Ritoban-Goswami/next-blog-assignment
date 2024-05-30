@@ -17,7 +17,7 @@ const BlogThumbnail = ({ thumbnail }: { thumbnail: string }) => {
       />
       <Image
         src={thumbnail}
-        className="transition-all group-hover:scale-110"
+        className="transition-all sm:group-hover:scale-110"
         width={600}
         height={300}
         priority={true}

@@ -52,7 +52,7 @@ const Bookmark = ({ blogID }: { blogID: number }) => {
         onClick={handleBookmark}
       >
         <BookmarkIcon
-          className={`w-5 h-5 hover:fill-gray-800 hover:dark:fill-gray-200 ${
+          className={`w-5 h-5 sm:hover:fill-gray-800 sm:hover:dark:fill-gray-200 ${
             isBookmarked.includes(blogID.toString()) &&
             "dark:fill-gray-200 fill-gray-800"
           }`}

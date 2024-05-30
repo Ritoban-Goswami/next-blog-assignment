@@ -21,7 +21,7 @@ export default async function Blogs({ query }: { query: string }) {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-4 sm:p-24">
-      <section className="sm:max-w-xl sm:min-w-[36rem] sm:mx-auto">
+      <section className="md:max-w-xl md:min-w-[36rem] sm:mx-auto">
         <h1 className="text-4xl font-bold mb-12">Blog</h1>
         <Search placeholder="&#128269;&nbsp;&nbsp;&nbsp;&nbsp;Search blogs..." />
         {filteredPosts.length > 0 ? (
