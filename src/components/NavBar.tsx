@@ -67,7 +67,7 @@ const NavBar = () => {
         animate="show"
         className={`${
           isOpen ? "flex" : "hidden"
-        } absolute top-9 right-0 flex-col items-end space-y-3 rounded p-4 pl-14 z-30 bg-[#1e1e1e] text-sm
+        } absolute top-9 right-0 flex-col items-end space-y-3 rounded p-4 pl-14 z-30 shadow-sm bg-[#f0f0f0] dark:bg-[#1e1e1e] text-sm
         sm:static sm:flex sm:flex-row sm:items-center sm:bg-inherit sm:p-0 sm:space-y-0 sm:space-x-5 sm:text-base`}
       >
         <motion.div variants={listItem}>
